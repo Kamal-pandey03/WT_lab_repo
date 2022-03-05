@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Friendly Neighbourhood</title>
+    </head>
+    <body>
+        <h2>Nepal and its Neighbouring Countries</h2>
+        <h3 style="color: red;"><i>1. Nepal</i></h3>
+        <img src="https://cdn.shopify.com/s/files/1/1124/8494/products/prayer-flags-default-mini-nepal-flag-fb448-13402920452142.png?v=1575932358" alt="Nepal's Flag" height="200" width="200"/>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Nepal" target="_blank">Know more about Nepal here</a>
+        <hr>
+        <h3 style="color: red;"><i>2. India</i></h3>
+        <img src="https://images.news18.com/ibnlive/uploads/2021/08/national-flag-16289132954x3.jpg" alt="Indian flag" height="200" width="200"/>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/India" target="_blank">Know more about India here</a>
+        <hr>
+        <h3 style="color: red;"><i>3. China</i></h3>
+        <img src="https://media.istockphoto.com/photos/chinese-flag-picture-id480646667?k=20&m=480646667&s=170667a&w=0&h=wMl4ma2VWl1Z9LvxrZjw8XcthlEaojGAg39gtHQrtng=" alt="China's flag" height="200" width="200">
+        <br>
+        <a href="https://en.wikipedia.org/wiki/China" target="_blank">Know more about China here</a>
+        <hr>
+        <b><marquee behavior="sliding" direction="right">That's all for now :)</marquee></b>
+    </body>
+</html>
