@@ -13,15 +13,15 @@
             <td rowspan="2">
                 <h4>Countries</h4>
                <ol>
-                   <li>Nepal</li>
-                   <li>India</li>
-                   <li>China</li>
+                   <a href="https://en.wikipedia.org/wiki/Nepal"><li>Nepal</li></a>
+                   <a href="https://en.wikipedia.org/wiki/India"><li>India</li></a>
+                   <a href="https://en.wikipedia.org/wiki/China"><li>China</li></a>
                </ol>
                <h4>Capitals</h4>
                <ol>
-                   <li>Kathmandu</li>
-                   <li>Delhi</li>
-                   <li>Beijing</li>
+                   <a href="https://en.wikipedia.org/wiki/Kathmandu"><li>Kathmandu</li></a>
+                   <a href="https://en.wikipedia.org/wiki/Delhi"><li>Delhi</li></a>
+                   <a href="https://en.wikipedia.org/wiki/Beijing"><li>Beijing</li></a>
                </ol>
             </td>
             <td>
