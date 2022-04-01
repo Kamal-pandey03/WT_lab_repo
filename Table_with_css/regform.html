@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Registration Table</title>
+        <link rel="stylesheet" href="regform.css" type="text/css">
+    </head>
+    <body>
+        <div class="form">
+        <form action="" class="formcomp">
+            <label class="details">Name<span class="asterisk">*</span>:</label> <input class="inbox" type="text" required> <br><br>
+            <label class="details">Parent's Name<span class="asterisk">*</span>:</label> <input class="inbox" type="text" required> <br><br>
+            <label class="details">Mobile<span class="asterisk">*</span>:</label> <input class="inbox" type="text" required> <br><br>
+            <label class="details">Email<span class="asterisk">*</span>:</label> <input class="inbox" type="email" required> <br><br>
+            <label class="details">Gender<span class="asterisk">*</span>:</label> <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label> <br><br>
+            <label class="details">Photo<span class="asterisk">*</span>:</label> <input type="file" required multiple> <br><br>
+            <label class="details">Program<span class="asterisk">*</span>:</label> 
+            <select name="program" class="choosep">
+                <option value="">--Select</option>
+                <option value="BESE">BE-Software</option>
+                <option value="BEIT">BE-IT</option>
+                <option value="BECE">BE-CE</option>
+            </select>
+            <br>
+            <h3>Address Details</h3>
+            <label class="details">Province<span class="asterisk">*</span>:</label>
+            <select name="province" class="choosepro">
+                <option value="">--Select</option>
+                <option value="Pro1">Province-1</option>
+                <option value="BEIT">Madesh</option>
+                <option value="BECE">Bagmati</option>
+            </select>
+            <br>
+            <br>
+            <label class="details">District<span class="asterisk">*</span>:</label>
+            <select name="district" class="choosedis">
+                <option value="">--Select</option>
+                <option value="KTM">Kathmandu</option>
+                <option value="Lalitpur">Lalitpur</option>
+                <option value="Bhaktapur">Bhaktapur</option>
+            </select><br><br>
+            <label class="details">Description:</label>
+            <textarea name="descript" class="desarea" cols="25px" rows="3px"></textarea>
+            <br>
+            <br>
+            <label><input type="checkbox" name="agreement">I accept the Terms and Conditions.</label> <br><br>
+            <input class="btn" type="submit" value="Submit All"> <input class="btn" type="reset" value="Reset">
+        </form>
+        </div>
+    </body>
+</html>
