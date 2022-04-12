@@ -2,6 +2,11 @@
 <html>
     <head>
         <title>Table 2</title>
+        <style type="text/css" rel="stylesheet">
+            textarea{
+                vertical-align: top;
+            }
+        </style>
     </head>
     <body>
         <form action="">
@@ -22,43 +27,63 @@
                     <td>Total</td>
                 </tr>
                 <tr>
-                    <td><input type="text" size="8"></td>
-                    <td><select name="" id="">
+                    <td><input type="text" size="8" id="qty1"></td>
+                    <td><select name="icode" id="" >
                         <option value="0"></option>
                         <option value="1">123</option>
                         <option value="1">456</option>
                         <option value="1">789</option>
                     </select></td>
                     <td><input type="text" size="7"></td>
-                    <td><input type="text" size="8"></td>
-                    <td><input type="text" size="8"></td>
+                    <td><input type="text" size="8" id="price1" name="price"></td>
+                    <td><input type="text" size="8" id="total1" name="total"></td>
                 </tr>
                 <tr>
-                    <td><input type="text" size="8"></td>
-                    <td><select name="" id="">
+                    <td><input type="text" size="8" id="qty2"></td>
+                    <td><select name="icode" id="">
                         <option value="0"></option>
                         <option value="1">123</option>
                         <option value="1">456</option>
                         <option value="1">789</option>
                     </select></td>
                     <td><input type="text" size="7"></td>
-                    <td><input type="text" size="8"></td>
-                    <td><input type="text" size="8"></td>
+                    <td><input type="text" size="8" id="price2" name="price"></td>
+                    <td><input type="text" size="8" id="total2" name="total"></td>
                 </tr>
                 <tr>
                     <td colspan="3" align="center">SubTotal</td>
-                    <td colspan="2"><input type="text" size="22"></td>
+                    <td colspan="2"><input type="text" size="22" id="subtotal" name="subtotal"></td>
                 </tr>
                 <tr>
                     <td colspan="2" align="center">Tax</td>
-                    <td><input type="text" size="7"></td>
-                    <td colspan="2"><input type="text" size="22"></td>
+                    <td><input type="text" size="7" id="tax"></td>
+                    <td colspan="2"><input type="text" size="22" id="withtax"></td>
                 </tr>
                 <tr>
-                    <td colspan="3" align="right">Grand Total:</td>
-                    <td colspan="2"><input type="text" size="22"></td>
+                    <td colspan="3" align="right"><input type="button" value="Grand Total" onclick="calculate()"></td>
+                    <td colspan="2"><input type="text" size="22" id="total"></td>
                 </tr>
             </table>
+
         </form>
+        <script>
+            function calculate()
+            {
+                var q_one = document.getElementById("qty1").value;
+                var q_two = document.getElementById("qty2").value;
+                var up_one = document.getElementById("price1").value;
+                var up_two = document.getElementById("price2").value;
+                document.getElementById("total1").innerHTML = parseInt(q_one)*parseInt(up_one);
+                document.getElementById("total2").innerHTML = parseInt(q_two)*parseInt(up_two);
+                var tot1 = document.getElementById("total1").value;
+                var tot2 = document.getElementById("total2").value
+                var subtot = parseInt(tot1)+parseInt(tot2);
+                document.getElementById("subtotal").innerHTML = subtot;
+                var get_tax = document.getElementById("tax").value;
+                var totalWith_tax = subtot + ((get_tax/100)*subtot);
+                document.getElementById("withtax").innerHTML = totalWith_tax;
+                document.getElementById("total").innerHTML = totalWith_tax;
+            }
+        </script>
     </body>
 </html>
