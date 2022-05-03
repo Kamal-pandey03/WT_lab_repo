@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>JS String to Uppercase</title>
+    </head>
+    <body>
+        <script>
+            var str = prompt("Enter any string.");
+            var len = str.length;
+            str = str.replace(str.charAt(0),str.charAt(0).toUpperCase());
+            str = str.replace(str.charAt(len-1),str.charAt(len-1).toUpperCase());
+            alert(str); 
+        </script>
+    </body>
+</html>
