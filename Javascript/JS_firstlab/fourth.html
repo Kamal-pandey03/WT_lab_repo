@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            Counting number or char present in string
+        </title>
+    </head>
+    <body>
+        <script>
+            var str=prompt("Enter any string: ");
+            strLen=str.length;
+            var strArr=str.split("");
+            for(var i=0; i<strLen-1; i++)
+            {
+                var count=0;
+                var strMatch="";
+                var char="";
+                var match=char.match(/strArr[i]/g);
+                if(strArr[i]!=match)
+                {
+                    strMatch = str.match(/strArr[i]/g);
+                    // for(var i=0; i<strLen-1; i++)
+                    // {
+                    //     if(strArr[i]==str)
+                    //     {
+                    //         count++;
+                    //     }
+                    // }
+                    document.write(strArr[i]+" = "+strMatch.length+"<br>");
+                }
+                char = strArr[i].join("");
+            }
+
+        </script>
+    </body>
+</html>

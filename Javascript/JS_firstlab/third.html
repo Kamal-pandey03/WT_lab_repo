@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Counting number of vowel letters</title>
+    </head>
+    <body>
+        <script>
+            var str = prompt("Enter any string to count no of vowels: ");
+            var vowel = str.match(/[aeiou]/gi);
+            var vowelCount = vowel.length;
+            document.write("Number of vowel present is: "+vowelCount);
+        </script>
+    </body>
+</html>

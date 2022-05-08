@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            JS second one
+        </title>
+    </head>
+    <body id="body">
+        <script>
+            var strArr = prompt("Enter multiple comma separated words: ");
+            var arr = strArr.split(",");
+            var arrOne = arr.join(" ");
+            document.write("The provided array are: " + arrOne+"<br>");
+            document.write("The first element of array is: "+arr[0]+"<br>");
+            document.write("The last element of array is: "+arr[arr.length-1]+"<br>");
+            document.write("The array in reverse order is: "+arr.reverse()+"<br>");
+            document.write("The array in sorted order is: "+arr.sort()+"<br>");
+            document.write("The length of array is: "+arr.length);
+        </script>
+    </body>
+</html>
