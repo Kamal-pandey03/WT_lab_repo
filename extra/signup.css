@@ -1,0 +1,48 @@
+.comp{
+    background-color: white;
+    border: 2px solid black;
+    width: 275px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form{
+    margin: 30px;
+}
+.signin{
+    width: 100%;
+    margin: 10px auto;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.nextmeth{
+    width: 100%;
+    margin: 10px auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.continue{
+    margin: 15px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid pink;
+    background-image:linear-gradient(to right,#aa336a, pink) ;
+}
+p{
+    text-align: center;
+}
+.twitter{
+    text-align: left;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-color: #00acee;
+    background-color: #00acee;
+    color: white;
+}
+.fb{
+    text-align: left;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-color: #3b5998;
+    background-color: #3b5998;
+    color: white;
+}

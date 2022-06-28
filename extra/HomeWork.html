@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Number with OTP</title>
+    <style>
+        .mobile_num{
+            border: 1px solid gray;
+            height: 200px;
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        #number{
+            height: 20px;
+        }
+        button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile_num">
+        <h3>Enter Mobile number for OTP</h3>
+        <input type="text" name="number" id="number" size="25">
+        <p>(Format: 3 Digit Country Code - 10 Digit Number)</p>
+        <button onclick="display()">Submit</button><br>
+        <span id="display"></span>
+    </div>
+    <script>
+        function display(){
+            var num = document.getElementById("number").value;
+            var code = num.split("");
+            
+            document.getElementById("display").innerHTML = code;
+            if(num == "")
+            {
+                document.getElementById("display").innerHTML = "Can't Be Empty";
+            }
+            else if(num.length < 13)
+            {
+                document.getElementById("display").innerHTML = "Number is short!";
+            }
+            // else if(num = /^(977)/)
+            // (?:\+977[- ])?\d{2}-?\d{7,8}
+
+
+        }
+    </script>
+</body>
+</html>
